@@ -20,7 +20,7 @@ services:
     volumes:
       - ./app:/app
     working_dir: /app
-    command: npm start
+    command: sh -c "npm install && npm start"
 
   nginx:
     image: nginx:alpine
